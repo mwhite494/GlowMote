@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GlowMote</string>
+    <string name="menuConnectStr">Connect device</string>
+    <string name="menuDisconnectStr">Disconnect device</string>
+    <string name="menuCustomColorStr">Create a custom color</string>
+    <string name="menuSettingsStr">Settings</string>
+    <string name="connectionStatusStr">Connection Status:</string>
+    <string name="contentDescription">Green is connected, red is not connected</string>
+    <string name="cycleStyle">Cycle Style:</string>
+    <string name="cycleJump">JUMP</string>
+    <string name="cycleFade">FADE</string>
+    <string name="cycleSpeed">Cycle Speed:</string>
+    <string name="okString">OK</string>
+
+</resources>

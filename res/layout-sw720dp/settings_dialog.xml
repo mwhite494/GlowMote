@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/cycleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/cycleStyle"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cycleSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cycleStyle"
+        android:layout_below="@+id/cycleStyle"
+        android:layout_marginTop="170dp"
+        android:text="@string/cycleSpeed"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cycleSpeed"
+        android:layout_marginBottom="45dp"
+        android:layout_toRightOf="@+id/cycleSpeed"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/plus_button_selector" />
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/plusBtn"
+        android:layout_below="@+id/plusBtn"
+        android:background="@drawable/minus_button_selector" />
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/minusBtn"
+        android:layout_alignTop="@+id/cycleSpeed"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/dismissBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minusBtn"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/plusBtn"
+        android:layout_marginRight="-30dp"
+        android:background="@drawable/button_selector_white"
+        android:text="@string/okString"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dummyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/dismissBtn"
+        android:layout_below="@+id/dismissBtn"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/cycleStyleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/cycleStyle"
+        android:layout_marginLeft="40dp" >
+
+        <RadioButton
+            android:id="@+id/jumpBtn"
+            android:soundEffectsEnabled="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="left"
+            android:text="@string/cycleJump"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fadeBtn"
+            android:soundEffectsEnabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:text="@string/cycleFade"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

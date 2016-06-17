@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuConnect"
+        android:title="@string/menuConnectStr"/>
+    
+    <item 
+        android:id="@+id/menuDisconnect"
+        android:title="@string/menuDisconnectStr" />
+    
+    <item
+        android:id="@+id/menuCustomColor"
+        android:title="@string/menuCustomColorStr"/>
+    
+    <item
+        android:id="@+id/menuSettings"
+        android:title="@string/menuSettingsStr"/>
+
+</menu>
